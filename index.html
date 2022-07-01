@@ -218,25 +218,36 @@
         </div>
     </section>
 
-        <!-- Sección de Contacto -->
-    <section class="formcontato" id="contacto">
-            <div  class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                    </form>
-                </div>
-            </div>
+    <section id="contacto">
+        <div class="contacto__info">
+            <h2 class="contacto__titulo">Contacto</h2>
+            <p class="contacto__texto">
+                Ingresa tus datos en el siguiente formulario. <br>Me pondré en contacto
+                contigo lo más pronto posible.
+            </p>
+
+            <form class="contacto__contenedor">
+
+                <ul class="contacto__errores" id="errores-nombre"></ul>
+                <input type="text" id="nombreapellido" placeholder="Nombre" class="contacto__input">
+                <ul class="contacto__errores" id="errores-email"></ul>
+                <input type="text" id="email" placeholder="Correo Electrónico" class="contacto__input">
+                <ul class="contacto__errores" id="errores-asunto"></ul>
+                <input type="text" id="Asunto" placeholder="Asunto" class="contacto__input">
+                <ul class="contacto__errores" id="errores-mensaje"></ul>
+                <textarea id="mensaje" class="contacto__input contacto__input-mensaje" rows="10" placeholder="Mensaje"></textarea>
+
+                <input class="contacto__boton" type="button" value="Enviar Mensaje">
+
+
+            </form>
+
+            <p class="contacto__Info__datos">Datos guardados correctamente!</p>
+
+        </div>
+
+        <script src="validacion.js"></script>
+
     </section>
 
         <!-- Sección de Footer -->
@@ -247,6 +258,6 @@
             </div>
         </section>
     </div>
- <script src="validacion.js"></script>
+ <!--<script src="validacion.js"></script>-->
 </body>
 </html>

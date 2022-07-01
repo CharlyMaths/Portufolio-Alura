@@ -39,6 +39,7 @@ section.menu{
 }
 
 header.menu__header{
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -310,6 +311,7 @@ div.experience__box div.experience__description span.experience__repo a button.e
     color: #2A7AE4;
     background-color: #F5F5F5;
     border-color:#2A7AE4;
+    cursor: pointer;
 }
 
 div.experience__box div.experience__description span.experience__demo a button.experience__botao--demo{
@@ -320,6 +322,7 @@ div.experience__box div.experience__description span.experience__demo a button.e
     color: #F5F5F5;
     background-color: #2A7AE4;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -333,15 +336,45 @@ section.formcontato div.formcontato__contacto{
     background-color: var(--color-fondo-azul);
 }
 
-section.formcontato div.formcontato__contacto div.formcontato__text div.formcontato__form{
-    display: flex;
-    flex-direction: column;
-   
+section.formcontato div.formcontato__contacto div.formcontato__text{
+    margin: 10px 10px;
 }
 
-/*footeer*/
+section.formcontato div.formcontato__contacto div.formcontato__text form.formcontato__form{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.formcontato__input{
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 4px;
+    border: none;
+}
+
+.formcontato__textarea{
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 4px;
+    border: none;
+    height: 170px;
+}
+
+.formcontato__botao{
+    padding: 10px;
+    color: white;
+    background-color: #2A7AE4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;    
+}
 
 section.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
    
 }
 
